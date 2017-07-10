@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuMusicTopChart"
+        android:title="Music Top Chart"
+        android:orderInCategory="1"
+        app:showAsAction="withText"
+        />
+    <item
+        android:id="@+id/menuArtistTopChart"
+        android:title="Artist Top Chart"
+        android:orderInCategory="1"
+        app:showAsAction="withText"
+        />
+    <item
+        android:id="@+id/menuTagTopChart"
+        android:title="Tag Top Chart"
+        android:orderInCategory="1"
+        app:showAsAction="withText"
+        />
+
+</menu>
