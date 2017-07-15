@@ -17,7 +17,18 @@ public class TrackItem {
     @SerializedName("image")
     private List<ImageItem> image;
 
+    @SerializedName("artist")
+    private ArtistItem artistItem;
+
     public TrackItem(){
+    }
+
+    public ArtistItem getArtistItem() {
+        return artistItem;
+    }
+
+    public void setArtistItem(ArtistItem artistItem) {
+        this.artistItem = artistItem;
     }
 
     public String getName() {
@@ -43,4 +54,5 @@ public class TrackItem {
     public void setImage(List<ImageItem> image) {
         this.image = image;
     }
+
 }

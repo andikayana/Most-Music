@@ -26,6 +26,8 @@ public class TrackViewHolder extends RecyclerView.ViewHolder {
     TextView listeners;
     @BindView(R.id.imgTrack)
     ImageView image;
+    @BindView(R.id.tvArtist)
+    TextView artist;
 
     public TrackViewHolder(View itemView) {
         super(itemView);
@@ -33,6 +35,7 @@ public class TrackViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void bind(TrackItem data, int position) {
+        artist.setText(data.getArtistItem().getNameArtist());
         name.setText(data.getName());
         listeners.setText(data.getListeners());
         Glide.with(itemView.getContext())
