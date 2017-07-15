@@ -1,17 +1,23 @@
 package com.blikadek.popularmusic.pojo;
 
+import com.google.gson.annotations.SerializedName;
+
+import java.util.List;
+
 /**
  * Created by M13x5aY on 10/07/2017.
  */
 
 public class TrackItem {
 
+    @SerializedName("name")
     private String name;
+    @SerializedName("listeners")
     private String listeners;
-    private String url;
+    @SerializedName("image")
+    private List<ImageItem> image;
 
     public TrackItem(){
-
     }
 
     public String getName() {
@@ -30,11 +36,11 @@ public class TrackItem {
         this.listeners = listeners;
     }
 
-    public String getUrl() {
-        return url;
+    public List<ImageItem> getImage() {
+        return image;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setImage(List<ImageItem> image) {
+        this.image = image;
     }
 }
