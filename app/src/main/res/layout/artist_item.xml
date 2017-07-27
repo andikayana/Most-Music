@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout
+<android.support.v7.widget.CardView
     android:orientation="vertical"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
-    xmlns:android="http://schemas.android.com/apk/res/android">
-   <!-- card_view:cardBackgroundColor="@color/cardview_light_background"
+    card_view:cardBackgroundColor="@color/cardview_light_background"
     card_view:cardCornerRadius="1dp"
     card_view:cardElevation="1dp"
-    card_view:cardUseCompatPadding="true"-->
+    card_view:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,7 +19,7 @@
         android:orientation="horizontal">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imgTrack"
+            android:id="@+id/imgArtist"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@mipmap/ic_launcher"
@@ -45,7 +44,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
+            <!--<TextView
                 android:id="@+id/tvJudulTrack"
                 android:layout_width="match_parent"
                 android:layout_height="26dp"
@@ -55,20 +54,21 @@
                 android:text="Artist"
                 android:textSize="18sp"
                 android:textColor="@color/ColorPrimaryText"
-                 />
+                />-->
 
             <TextView
-                android:id="@+id/tvArtist"
+                android:id="@+id/tvNameArtist"
                 android:layout_width="match_parent"
-                android:layout_height="18dp"
+                android:layout_height="26dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:text="Judul Lagu"
-                android:textSize="14sp"
-                android:textColor="@color/ColorSecondaryText"/>
+                android:layout_marginTop="20dp"
+                android:text="Artist"
+                android:textSize="18sp"
+                android:textColor="@color/ColorPrimaryText"/>
 
             <TextView
-                android:id="@+id/tvListener"
+                android:id="@+id/tvListenerArtist"
                 android:layout_width="match_parent"
                 android:layout_height="18dp"
                 android:layout_marginLeft="5dp"
@@ -77,16 +77,8 @@
                 android:text="Listener"
                 android:textSize="13sp"
                 android:textStyle="italic" />
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="@color/colorAccent"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="13dp"
-                />
         </LinearLayout>
     </LinearLayout>
 
 
-</LinearLayout>
+</android.support.v7.widget.CardView>

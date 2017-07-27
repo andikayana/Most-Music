@@ -5,20 +5,17 @@
     <item
         android:id="@+id/menuMusicTopChart"
         android:title="Music Top Chart"
-        android:orderInCategory="1"
-        app:showAsAction="withText"
+        app:showAsAction="never"
         />
     <item
         android:id="@+id/menuArtistTopChart"
         android:title="Artist Top Chart"
-        android:orderInCategory="1"
-        app:showAsAction="withText"
+        app:showAsAction="never"
         />
     <item
         android:id="@+id/menuTagTopChart"
         android:title="Tag Top Chart"
-        android:orderInCategory="1"
-        app:showAsAction="withText"
+        app:showAsAction="never"
         />
 
 </menu>

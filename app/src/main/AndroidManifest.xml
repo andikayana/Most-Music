@@ -19,6 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".TopArtistActivity"/>
+        <activity android:name=".DetailActivity"
+            android:label="Detail"
+            android:parentActivityName=".MainActivity"/>
+
     </application>
 
 </manifest>

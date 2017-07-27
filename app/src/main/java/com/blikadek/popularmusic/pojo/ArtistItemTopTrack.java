@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
  * Created by M13x5aY on 15/07/2017.
  */
 
-public class ArtistItem {
+public class ArtistItemTopTrack {
 
     @SerializedName("name")
     private String nameArtist;

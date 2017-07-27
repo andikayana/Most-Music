@@ -1,6 +1,5 @@
 package com.blikadek.popularmusic.viewHolder;
 
-import android.app.Activity;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
@@ -35,12 +34,14 @@ public class TrackViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void bind(TrackItem data, int position) {
-        artist.setText(data.getArtistItem().getNameArtist());
+        artist.setText(data.getArtistItemTopTrack().getNameArtist());
         name.setText(data.getName());
-        listeners.setText(data.getListeners());
+        listeners.setText(data.getListeners() +" Listeners");
         Glide.with(itemView.getContext())
-                .load(data.getImage().get(1).getText())
+                .load(data.getImage().get(2).getText())
                 .into(image);
+
+
     }
 
 }

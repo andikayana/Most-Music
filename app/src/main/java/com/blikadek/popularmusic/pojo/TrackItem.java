@@ -18,17 +18,17 @@ public class TrackItem {
     private List<ImageItem> image;
 
     @SerializedName("artist")
-    private ArtistItem artistItem;
+    private ArtistItemTopTrack artistItemTopTrack;
 
     public TrackItem(){
     }
 
-    public ArtistItem getArtistItem() {
-        return artistItem;
+    public ArtistItemTopTrack getArtistItemTopTrack() {
+        return artistItemTopTrack;
     }
 
-    public void setArtistItem(ArtistItem artistItem) {
-        this.artistItem = artistItem;
+    public void setArtistItemTopTrack(ArtistItemTopTrack artistItemTopTrack) {
+        this.artistItemTopTrack = artistItemTopTrack;
     }
 
     public String getName() {
