@@ -1,4 +1,4 @@
-package com.blikadek.popularmusic.pojo.Artist;
+package com.blikadek.popularmusic.model.top_artist;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
  * Created by M13x5aY on 23/07/2017.
  */
 
-public class ResponseAPIArtist {
+public class ApiResponseArtist {
     @SerializedName("artists")
     private Artists artists;
 

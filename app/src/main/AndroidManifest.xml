@@ -12,17 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.TopMusicActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TopArtistActivity"/>
-        <activity android:name=".DetailActivity"
-            android:label="Detail"
-            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".activity.TopArtistActivity"/>
+        <activity android:name=".activity.DetailTopMusicActivity"
+            android:parentActivityName=".activity.TopMusicActivity"/>
 
     </application>
 

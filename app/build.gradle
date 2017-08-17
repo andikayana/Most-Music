@@ -11,7 +11,11 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        buildConfigField("String", "API_KEY", "\"1e16870e75ef9fc54fa98f2a1c551ec3\"")
+
+        buildConfigField ('String', 'API_KEY', API_KEY)
+        buildConfigField ('String', 'JSON_FORMAT', "\"json\"")
+        buildConfigField ('String', 'API_SECRET', API_SECRET)
+
     }
     buildTypes {
         release {
@@ -40,8 +44,8 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:3.8.0'
     compile 'com.google.code.gson:gson:2.8.1'
     compile 'com.android.volley:volley:1.0.0'
-    compile 'com.squareup.retrofit2:retrofit:2.3.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    //compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
     compile 'com.squareup.okhttp3:logging-interceptor:3.8.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
 

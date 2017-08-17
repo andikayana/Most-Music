@@ -1,5 +1,6 @@
-package com.blikadek.popularmusic.pojo;
+package com.blikadek.popularmusic.model.top_track;
 
+import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
@@ -14,6 +15,10 @@ public class TrackItem {
     private String name;
     @SerializedName("listeners")
     private String listeners;
+    @SerializedName("playcount")
+    private String playcount;
+    @SerializedName("url")
+    private String url;
     @SerializedName("image")
     private List<ImageItem> image;
 
@@ -55,4 +60,27 @@ public class TrackItem {
         this.image = image;
     }
 
+    public String getPlaycount() {
+        return playcount;
+    }
+
+    public void setPlaycount(String playcount) {
+        this.playcount = playcount;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String toJson() {
+        return new Gson().toJson(this);
+    }
+
+    public TrackItem fromJson(String newsJson){
+        return new Gson().fromJson(newsJson, TrackItem.class);
+    }
 }

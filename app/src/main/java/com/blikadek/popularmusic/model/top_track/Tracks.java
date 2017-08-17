@@ -1,11 +1,8 @@
-package com.blikadek.popularmusic.pojo;
+package com.blikadek.popularmusic.model.top_track;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.util.LinkedList;
 import java.util.List;
-
-import static android.R.attr.name;
 
 /**
  * Created by M13x5aY on 10/07/2017.

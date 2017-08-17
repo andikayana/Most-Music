@@ -1,4 +1,4 @@
-package com.blikadek.popularmusic.pojo.Artist;
+package com.blikadek.popularmusic.model.top_artist;
 
 import com.google.gson.annotations.SerializedName;
 

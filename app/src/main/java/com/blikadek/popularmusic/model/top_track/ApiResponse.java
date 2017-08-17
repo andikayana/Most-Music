@@ -1,14 +1,12 @@
-package com.blikadek.popularmusic.pojo;
+package com.blikadek.popularmusic.model.top_track;
 
 import com.google.gson.annotations.SerializedName;
-
-import java.util.List;
 
 /**
  * Created by M13x5aY on 10/07/2017.
  */
 
-public class ResponseAPI {
+public class ApiResponse {
 
     @SerializedName("tracks")
     private Tracks tracks;
@@ -24,7 +22,7 @@ public class ResponseAPI {
     @Override
     public String toString(){
         return
-                "ResponseAPI{" +
+                "ApiResponse{" +
                         "tracks = '" + tracks + '\'' +
                         "}";
     }

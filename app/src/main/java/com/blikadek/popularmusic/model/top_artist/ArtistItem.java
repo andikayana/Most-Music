@@ -1,7 +1,7 @@
-package com.blikadek.popularmusic.pojo.Artist;
+package com.blikadek.popularmusic.model.top_artist;
 
-import com.blikadek.popularmusic.pojo.ArtistItemTopTrack;
-import com.blikadek.popularmusic.pojo.ImageItem;
+import com.blikadek.popularmusic.model.top_track.ImageItem;
+import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
@@ -65,5 +65,13 @@ public class ArtistItem {
 
     public void setImageA(List<ImageItem> imageA) {
         this.imageA = imageA;
+    }
+
+    public String toJson() {
+        return new Gson().toJson(this);
+    }
+
+    public ArtistItem fromJson(String newsJson){
+        return new Gson().fromJson(newsJson, ArtistItem.class);
     }
 }
