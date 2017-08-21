@@ -4,6 +4,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -12,6 +14,7 @@ import com.blikadek.popularmusic.R;
 import com.blikadek.popularmusic.model.top_track.TrackItem;
 import com.bumptech.glide.Glide;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -21,7 +24,7 @@ import butterknife.ButterKnife;
  * Created by M13x5aY on 10/07/2017.
  */
 
-public class TopTrackAdapter extends RecyclerView.Adapter<TopTrackAdapter.TrackViewHolder> {
+public class TopTrackAdapter extends RecyclerView.Adapter<TopTrackAdapter.TrackViewHolder>  {
 
     private List<TrackItem> trackItemList;
     private TopTrackClickListener mTopTrackClickListener;
@@ -29,6 +32,8 @@ public class TopTrackAdapter extends RecyclerView.Adapter<TopTrackAdapter.TrackV
     public TopTrackAdapter(List<TrackItem> trackItem) {
         this.trackItemList = trackItem;
     }
+
+
 
     @Override
     public TrackViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -68,6 +73,32 @@ public class TopTrackAdapter extends RecyclerView.Adapter<TopTrackAdapter.TrackV
             mTopTrackClickListener = clickListener;
     }
 
+    public void setFilter(List<TrackItem> filter) {
+        trackItemList = new ArrayList<>();
+        trackItemList.addAll(filter);
+        notifyDataSetChanged();
+    }
+
+    /*@Override
+    public Filter getFilter() {
+        return new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence constraint) {
+                String charString = constraint.toString();
+                if (charString.isEmpty()){
+                    trackItemList=mlist;
+                }else{
+
+                }
+            }
+
+            @Override
+            protected void publishResults(CharSequence constraint, FilterResults results) {
+
+            }
+        }
+    }
+*/
     public class TrackViewHolder extends RecyclerView.ViewHolder {
 
 
@@ -80,8 +111,7 @@ public class TopTrackAdapter extends RecyclerView.Adapter<TopTrackAdapter.TrackV
         @BindView(R.id.tvArtist)
         TextView artist;
         @BindView(R.id.tvPlayCount) TextView playCount;
-        @BindView(R.id.LLDetail)
-        LinearLayout LLDetail;
+        @BindView(R.id.LLDetail) LinearLayout LLDetail;
 
         public TrackViewHolder(View itemView) {
             super(itemView);

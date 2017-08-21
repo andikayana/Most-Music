@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "337534000470",
+    "firebase_url": "https://popular-music-28f8c.firebaseio.com",
+    "project_id": "popular-music-28f8c",
+    "storage_bucket": "popular-music-28f8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337534000470:android:4f91f93a5abf642e",
+        "android_client_info": {
+          "package_name": "com.blikadek.popularmusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337534000470-1ulsdh40o3fgbaosuoroaeqd7mldvj9m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blikadek.popularmusic",
+            "certificate_hash": "8656641069bc7b82e780de408abcbba1ca38361d"
+          }
+        },
+        {
+          "client_id": "337534000470-r2e9s8cdo82tgk0jn10adjv01l0mbvds.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3f6E6hgcZkka9Ly4uGwaTxhWoCbTORpc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337534000470-r2e9s8cdo82tgk0jn10adjv01l0mbvds.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

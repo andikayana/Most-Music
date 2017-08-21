@@ -12,9 +12,9 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-        buildConfigField ('String', 'API_KEY', API_KEY)
-        buildConfigField ('String', 'JSON_FORMAT', "\"json\"")
-        buildConfigField ('String', 'API_SECRET', API_SECRET)
+        buildConfigField('String', 'API_KEY', API_KEY)
+        buildConfigField('String', 'JSON_FORMAT', "\"json\"")
+        buildConfigField('String', 'API_SECRET', API_SECRET)
 
     }
     buildTypes {
@@ -25,9 +25,9 @@ android {
     }
 }
 ext {
-    supportLibraryVersion ='25.3.1'
-    butterKnifeVersion ='8.6.0'
-    retrofitVersion='2.3.0'
+    supportLibraryVersion = '25.3.1'
+    butterKnifeVersion = '8.6.0'
+    retrofitVersion = '2.3.0'
 }
 
 dependencies {
@@ -41,23 +41,20 @@ dependencies {
     compile "com.android.support:design:$supportLibraryVersion"
 
     compile "com.jakewharton:butterknife:$butterKnifeVersion"
+    //compile 'com.squareup.retrofit2:retrofit:2.3.0'
+
     compile 'com.github.bumptech.glide:glide:3.8.0'
     compile 'com.google.code.gson:gson:2.8.1'
     compile 'com.android.volley:volley:1.0.0'
-    //compile 'com.squareup.retrofit2:retrofit:2.3.0'
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
     compile 'com.squareup.okhttp3:logging-interceptor:3.8.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
-
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'com.tapadoo.android:alerter:1.0.6'
-
     compile 'com.google.firebase:firebase-ads:10.2.1'
-    debugCompile 'com.amitshekhar.android:debug-db:1.0.1'
-
-
+    compile 'com.google.firebase:firebase-core:10.0.1'
     testCompile 'junit:junit:4.12'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    debugCompile 'com.amitshekhar.android:debug-db:1.0.1'
 }
-
-/*apply plugin: 'com.google.gms.google-services'*/
+apply plugin: 'com.google.gms.google-services'
